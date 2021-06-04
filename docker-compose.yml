@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  checker:
+    build: .
+    #command: /bin/bash 
+    #stdin_open: true
+    #tty: true
+    volumes:
+      - ./notebooks:/home/jovyan
+    ports:
+      - 8888:8888
